@@ -25,12 +25,12 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-      - name: Build iOS IPA
-        run: flutter build ipa --release
+      - name: Build iOS Simulator
+        run: flutter build ios --release --simulator
 
-      - name: Upload IPA artifact
+      - name: Upload iOS app artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ios-ipa
-          path: build/ios/ipa/*.ipa
+          name: ios-simulator-app
+          path: build/ios/iphoneos/Runner.app
           retention-days: 30
