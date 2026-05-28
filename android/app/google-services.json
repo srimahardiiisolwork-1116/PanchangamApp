@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "733563655038",
+    "project_id": "telugubirthday-46755",
+    "storage_bucket": "telugubirthday-46755.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733563655038:android:e862fb8086ec5f4ac3992f",
+        "android_client_info": {
+          "package_name": "com.panchagam.birthday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733563655038-3jg2kh598rh0nlvk1d5fpdqa87445gn1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.panchagam.birthday",
+            "certificate_hash": "18c4c04947c565650d226c374cbfb42b34d095b6"
+          }
+        },
+        {
+          "client_id": "733563655038-nlge53blfidecn0gfsj9btckjtf1ektf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCt5UjHgP9MMPmjWG_giJL7glWTHdtUXDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733563655038-nlge53blfidecn0gfsj9btckjtf1ektf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "733563655038-ms2ujaita8c93ksile7c3inglahu3t1c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.panchangam.birthday"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

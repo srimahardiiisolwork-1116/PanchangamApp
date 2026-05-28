@@ -1,0 +1,12 @@
+[
+  {"name":"Hyderabad, IN","lat":17.3850,"lon":78.4867,"tz":5.5},
+  {"name":"Vijayawada, IN","lat":16.5062,"lon":80.6480,"tz":5.5},
+  {"name":"Visakhapatnam, IN","lat":17.6868,"lon":83.2185,"tz":5.5},
+  {"name":"Tirupati, IN","lat":13.6288,"lon":79.4192,"tz":5.5},
+  {"name":"Warangal, IN","lat":17.9689,"lon":79.5941,"tz":5.5},
+  {"name":"Guntur, IN","lat":16.3067,"lon":80.4365,"tz":5.5},
+  {"name":"Nellore, IN","lat":14.4426,"lon":79.9865,"tz":5.5},
+  {"name":"Kurnool, IN","lat":15.8281,"lon":78.0373,"tz":5.5},
+  {"name":"Ongole, IN","lat":15.5057,"lon":80.0499,"tz":5.5},
+  {"name":"Rajahmundry, IN","lat":17.0005,"lon":81.8040,"tz":5.5}
+]
