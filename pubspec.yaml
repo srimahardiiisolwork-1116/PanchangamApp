@@ -4,7 +4,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.2.0 <4.0.0'
+  sdk: '>=3.5.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -20,8 +20,8 @@ dependencies:
   device_calendar: ^4.3.2
   hive: ^2.2.3
   hive_flutter: ^1.1.0
-  firebase_core: ^2.32.0
-  firebase_auth: ^4.17.8
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
   timezone: ^0.9.4
   table_calendar: ^3.2.0
   intl: ^0.20.2
