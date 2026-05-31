@@ -228,26 +228,78 @@ class _CalendarScreenState extends ConsumerState<CalendarScreen> {
                   mainAxisSize: MainAxisSize.min,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Match Type: ${match['match_type']}',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: MediaQuery.of(context).orientation ==
-                                Orientation.landscape
-                            ? 12
-                            : 14,
-                      ),
+                    Row(
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                          decoration: BoxDecoration(
+                            color: offline ? Colors.orange.shade100 : Colors.green.shade100,
+                            borderRadius: BorderRadius.circular(4),
+                            border: Border.all(
+                              color: offline ? Colors.orange.shade300 : Colors.green.shade300,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                offline ? Icons.cloud_off : Icons.cloud_done,
+                                size: 14,
+                                color: offline ? Colors.orange.shade700 : Colors.green.shade700,
+                              ),
+                              const SizedBox(width: 4),
+                              Text(
+                                offline ? 'Offline' : 'Online',
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.bold,
+                                  color: offline ? Colors.orange.shade900 : Colors.green.shade900,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            'Match Type: ${match['match_type']}',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: MediaQuery.of(context).orientation ==
+                                      Orientation.landscape
+                                  ? 12
+                                  : 14,
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 16),
                     if (offline)
-                      Text(
-                        'Note: Times are calculated offline and may differ by ~25 minutes from some Panchang sources.',
-                        style: TextStyle(
-                          fontSize: MediaQuery.of(context).orientation ==
-                                  Orientation.landscape
-                              ? 9
-                              : 11,
-                          color: Colors.grey[700],
+                      Container(
+                        padding: const EdgeInsets.all(12),
+                        decoration: BoxDecoration(
+                          color: Colors.orange.shade50,
+                          borderRadius: BorderRadius.circular(8),
+                          border: Border.all(color: Colors.orange.shade200),
+                        ),
+                        child: Row(
+                          children: [
+                            Icon(Icons.warning_amber_rounded, color: Colors.orange.shade700, size: 20),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                'Offline Calculation: Times are calculated using astronomical formulas and may differ from traditional Panchang sources. For most accurate timings, please connect to internet.',
+                                style: TextStyle(
+                                  fontSize: MediaQuery.of(context).orientation ==
+                                          Orientation.landscape
+                                      ? 9
+                                      : 11,
+                                  color: Colors.orange.shade900,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     if (offline) const SizedBox(height: 12),
